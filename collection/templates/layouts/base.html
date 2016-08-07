@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>
-	{% block title %}Cherchezlafemme{% endblock %}
+	{% block title %}Anna Krupp: Cherchezlafemme{% endblock %}
 	</title>
 	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 	<link rel="script" href="{% static 'js/script.js' %}" />
@@ -12,25 +12,34 @@
 
 	<header>
 	{% block header %}
-		<div class="img-container">
-		</div>
 		<div id='header-wrap'>
+
+			<div id='logo-center'>
+				<h1 id="site-logo" class='nav-menu-links'>cherchezlafemme</h1>
+				<div id='scope-quote'>Learn something everyday.</div>
+			</div>
+
 			<div id="nav-menu">
 		     	<ul>
 				    <li class='nav-menu-links'><a href="{% url 'projects' %}" class="active">Projects</a></li>
 				    <li class='nav-menu-links'><a href="{% url 'contact' %}">Contact</a></li>
-				    <li class='nav-menu-links'><a href="{% url 'about' %}">About</a></li>
+				    <li class='nav-menu-links'><a href="{% url 'experience' %}">Experience</a></li>
 		        </ul>
 	    	</div>
+
 		</div>
-		<h1 id="site-title">Anna Krupp</h1>
-		<div id='scope-quote'>
-			<p>Code, dance, wine & jazz.</p>
-		</div>
+	
 	{% endblock %}
 	</header>
-
-	{% block content %}{% endblock %}
-	{% block footer %}{% endblock %}
+	<div id='main'>
+		{% block content %}{% endblock %}
+		{% block footer %}
+		<footer>
+			<div id='footer-wrap'>
+				<p>Icon Credits: </p>
+			</div>
+		</footer>
+		{% endblock %}
+	</div>
 	</body>
 </html>

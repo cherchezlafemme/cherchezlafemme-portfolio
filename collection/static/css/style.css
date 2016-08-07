@@ -1,68 +1,87 @@
-* {
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
  	box-sizing: border-box;
- 	margin: 0;
+ 	margin: 0 0 100px;
  	padding: 0;
- 	font-family: Lucida Grande;
  	font-size: 16px;
+ 	background: #fff;
+    color: #393939;
+    font: normal normal 16px 'Times New Roman', Times, FreeSerif, serif;
 }
 
-/*Background header style*/
-.img-container {
- 	min-height: 300px;
- 	background-color: #F8F3EA;
- 	background-repeat: no-repeat;
- 	background-size: 1800px 300px;
- 	background-position: center top;
- 	position: relative;
-  /*padding: 40px; (If don't want to set min-height or some image content is there) */
-}
-
-/*Title of the site style*/
-@font-face { 
-	font-family: AquilineTwo; 
-	src: url('AquilineTwo.ttf'); 
-}
-
-#site-title {
-	color: #254e7b;
-	font-family: 'AquilineTwo';
-	font-size: 42px;
-	position: absolute;
-	top: 50px;
-    width: 480px;
-    margin-left: 100px;
-    padding: 20px;
-    display: block;
-}
-
-/*Style of the header quote*/
-#scope-quote {
-	display: block;
-	margin-left: 140px;	
-	position: absolute;
-	padding: 20px;
-	top: 170px;
-    width: 400px;
-    color: #cbe2ef;
-}
-
-/*Navigation bar menu style*/
-#header-wrap {
-    position: fixed;
-    height: 50px;
-    top: 0;
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
     width: 100%;
-    z-index: 100;
+    overflow:hidden;
+}
+
+ul, li, footer {
+	margin: 0;
+	padding: 0;
+}
+
+/*Main frame style*/
+#container, header, footer { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Header*/
+#header-wrap {
+    height: 100px;
     border-bottom: 2px solid #cbe2ef;
 }
 
+/*Footer*/
+#footer-wrap {
+    height: 50px;
+    border-top: 2px solid #cbe2ef;
+    display: block;
+}
+
+#footer-wrap, #header-wrap {
+	margin-right: 3em;
+    margin-left: 3em;
+}
+
+/*Style of the logo, quote*/
+#scope-quote {
+    color: #cbe2ef;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#site-logo {
+	color: #254e7b;
+	font-size: 30px;
+	width: 100%;
+}
+
+#logo-center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*Menu navigation and icons*/
+#nav-menu {
+	text-align: center;
+}
 
 .nav-menu-links{
 	display: inline-block;
-	font-size: 20px;
-	float: right;
-	margin: 5px;
-	margin-right: 20px;
+	width: 100px;
+	margin: 0;
 }
 
 /*Basic links style*/
@@ -82,20 +101,4 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: #85c1e5;
-}
-
-/*Main content*/
-#container{ 
-	margin-left: 5%;
-    margin-right: 5%;
-}
-
-p, h2 {
-	padding: 10px;
-}
-
-h2 {
-	color: #254e7b;
-	font-family: 'AquilineTwo';
-	font-size: 32px;
 }
