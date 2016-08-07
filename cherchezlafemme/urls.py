@@ -1,4 +1,4 @@
-"""hellowebapp URL Configuration
+"""cerchezlafemme URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -19,9 +19,9 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
 	url(r'^$', 'collection.views.index', name='home'),
-    url(r'^about',
-    	TemplateView.as_view(template_name='about.html'),
-    	name='about'),
+    url(r'^experience',
+    	TemplateView.as_view(template_name='experience.html'),
+    	name='experience'),
     url(r'^contact',
     	TemplateView.as_view(template_name='contact.html'),
     	name='contact'),
