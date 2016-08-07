@@ -21,12 +21,16 @@
 
 			<div id="nav-menu">
 		     	<ul>
-				    <li class='nav-menu-links'><a href="{% url 'projects' %}" class="active">Projects</a></li>
-				    <li class='nav-menu-links'><a href="{% url 'contact' %}">Contact</a></li>
+				    <li class='nav-menu-links'><a href="{% url 'projects' %}">Projects</a></li>
+				    <li class='nav-menu-links'><a href="{% url 'about' %}">About</a></li>
 				    <li class='nav-menu-links'><a href="{% url 'experience' %}">Experience</a></li>
 		        </ul>
 	    	</div>
 
+		</div>
+
+		<div class="icon-container">
+			<a href="{% url 'contact' %}"><img class='icon' src="/static/images/envelope.svg"></a>
 		</div>
 	
 	{% endblock %}
