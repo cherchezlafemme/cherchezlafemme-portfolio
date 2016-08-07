@@ -102,3 +102,22 @@ a:visited {
 a:hover {
     color: #85c1e5;
 }
+
+/*images icons*/
+.icon-container {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-top: 10px;
+}
+
+/* resize images */
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
