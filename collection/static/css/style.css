@@ -29,7 +29,7 @@
 	font-size: 42px;
 	position: absolute;
 	top: 50px;
-    width: 400px;
+    width: 480px;
     margin-left: 100px;
     padding: 20px;
     display: block;
@@ -43,7 +43,7 @@
 	padding: 20px;
 	top: 170px;
     width: 400px;
-    color: #5584b1;
+    color: #cbe2ef;
 }
 
 /*Navigation bar menu style*/
@@ -53,7 +53,7 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 2px solid #5584b1;
+    border-bottom: 2px solid #cbe2ef;
 }
 
 
