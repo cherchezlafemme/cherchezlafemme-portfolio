@@ -20,6 +20,10 @@ footer {
     height: 100px;
     width: 100%;
     overflow:hidden;
+    background-color: #FFFFFF;
+    color: #5584b1;
+    text-align: center;
+    font-size: 14px;
 }
 
 ul, li, footer {
@@ -46,7 +50,7 @@ ul, li, footer {
     display: block;
 }
 
-#footer-wrap, #header-wrap {
+#footer-wrap, #header-wrap, .container {
 	margin-right: 3em;
     margin-left: 3em;
 }
@@ -107,6 +111,16 @@ a:hover {
 .icon-container {
     width: 40px;
     height: 40px;
+}
+
+/* resize images */
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+/*contact icon specific*/
+#contact-icon {
     position: fixed;
     top: 0;
     right: 0;
@@ -115,9 +129,43 @@ a:hover {
     margin-top: 10px;
 }
 
-/* resize images */
-.icon img {
-    width: 100%;
+/*Welcome to the site section*/
+#hello-container {
+    display: block;
+}
+
+table {
+    width:100%;
+    background-color: #E8DFDA;
+    border-bottom: 2px solid #cbe2ef;
+    border-spacing: 0;
+    line-height: 0;
+    border-collapse: collapse;
+}
+
+#profile-pic {
+    size: 50%;
     height: auto;
+    width: 100%;
+}
+
+td {
+    border-spacing: 0;
+
+    width: 50%;
+}
+
+#left-side-image-video {
+}
+
+#right-side-hello {
+    background-color: #E8DFDA;
+    padding: 20px;
+}
+
+#right-side-hello-content {
+    color: blue;
+    opacity: 0.3;
+    font-size: 34px;
 }
 

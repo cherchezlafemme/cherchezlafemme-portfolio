@@ -1,8 +1,17 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-<div id='container'>
-
-	
+<div class='container' id='hello-container'>
+	<table>
+	<tr>
+		<td id='left-side-image-video'>
+			<img id='profile-pic' src='/static/images/anna-krupp.jpg' alt='anna-krupp-profile-pic'>
+		</td>
+		<td id='right-side-hello'>
+				<div id='right-side-hello-content'> HI, MY NAME IS ANYA.</div>
+		</td>
+	</tr>
+	</table>
 </div>
+{% include '_about.html' %}
 {% endblock %}

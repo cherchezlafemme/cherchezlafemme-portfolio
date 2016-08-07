@@ -15,7 +15,7 @@
 		<div id='header-wrap'>
 
 			<div id='logo-center'>
-				<h1 id="site-logo" class='nav-menu-links'>cherchezlafemme</h1>
+				<h1 id="site-logo" class='nav-menu-links'>Anna Krupp</h1>
 				<div id='scope-quote'>Learn something everyday.</div>
 			</div>
 
@@ -29,8 +29,8 @@
 
 		</div>
 
-		<div class="icon-container">
-			<a href="{% url 'contact' %}"><img class='icon' src="/static/images/envelope.svg"></a>
+		<div class="icon-container" id='contact-icon'>
+			<a href="{% url 'contact' %}"><img class='icon' src="/static/images/envelope.svg" alt='contact-me'></a>
 		</div>
 	
 	{% endblock %}
@@ -40,7 +40,8 @@
 		{% block footer %}
 		<footer>
 			<div id='footer-wrap'>
-				<p>Icon Credits: </p>
+				<p>Icon Credits: <a href='https://thenounproject.com/iconka/'>Denis Sazhin</a> from the Noun Project.</p>
+				<p>Copyright © 2016 Anna Krupp. All rights reserved.</p>
 			</div>
 		</footer>
 		{% endblock %}
