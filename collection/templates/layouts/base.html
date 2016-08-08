@@ -15,7 +15,7 @@
 		<div id='header-wrap'>
 
 			<div id='logo-center'>
-				<h1 id="site-logo" class='nav-menu-links'>cherchezlafemme</h1>
+				<h1 id="site-logo" class='nav-menu-links'>Anna Krupp</h1>
 				<div id='scope-quote'>Learn something everyday.</div>
 			</div>
 
@@ -24,15 +24,30 @@
 				    <li class='nav-menu-links'><a href="{% url 'projects' %}">Projects</a></li>
 				    <li class='nav-menu-links'><a href="{% url 'about' %}">About</a></li>
 				    <li class='nav-menu-links'><a href="{% url 'experience' %}">Experience</a></li>
+				    <li class='nav-menu-links'><a href="{% url 'volunteer' %}">Community</a></li>
 		        </ul>
 	    	</div>
 
 		</div>
 
-		<div class="icon-container">
-			<a href="{% url 'contact' %}"><img class='icon' src="/static/images/envelope.svg"></a>
+		<div id='fixed-menu'>
+			<div id='links-to-media'>
+
+				<ul>
+					<li id='git-hub-cat'><a href='https://github.com/cherchezlafemme' alt='git-hub-link'>
+						<img src='/static/images/Octocat.png' width="40" height="40" alt="View Anna's Krupp GitHub Profile">
+					</a></li>
+					<!-- <li><a href="https://www.linkedin.com/in/anna-krupp">
+			          	<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Anna Krupp's profile on LinkedIn">
+			       	</a></li> -->
+				</ul>
+			</div>
+			<div class="icon-container" id='contact-icon'>
+				<a href="{% url 'contact' %}"><img class='icon' src="/static/images/envelope.svg" alt='contact-me'></a>
+			</div>
+			
+
 		</div>
-	
 	{% endblock %}
 	</header>
 	<div id='main'>
@@ -40,7 +55,8 @@
 		{% block footer %}
 		<footer>
 			<div id='footer-wrap'>
-				<p>Icon Credits: </p>
+				<p>Icon Credits: <a href='https://thenounproject.com/iconka/'>Denis Sazhin</a> from the Noun Project.</p>
+				<p>Copyright © 2016 Anna Krupp. All rights reserved.</p>
 			</div>
 		</footer>
 		{% endblock %}

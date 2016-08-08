@@ -1,8 +1,57 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-<div id='container'>
+<div class='container' id='hello-container'>
+	<table>
+	<tr>
+		<td id='left-side-image-video'>
+			<img id='profile-pic' src='/static/images/anna-krupp.jpg' alt='anna-krupp-profile-pic'>
+		</td>
+		<td id='right-side-hello'>
+				<div id='right-side-hello-content'>
+					<p class='line-p'>HI, I'M ANYA.</p>
+					<p class='line-p'>JUNIOR DEVELOPER</p>
 
-	
+					<p class='line-p'>Tech Skills:</p>
+					<ul>
+						<li>Ruby on Rails</li><br/>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Ruby on Rails</li>
+					</ul>
+
+					<p>Looking forward to learn:</p>
+					<ul>
+						<li>Python</li>
+						<li>Advanced JavaScript</li>
+						<li>New gems & libraries</li>
+					</ul>
+
+					<p>Other languages</p>
+
+					<li>Russian: native</li>
+					<li>Italian: profetional</li>
+
+					<p>Overflow</p>
+					<ul>
+						<li>Sales</li>
+						<li>Consumer behaviour/li>
+						<li>Communication</li>
+						<li>Leadership</li>
+						<li>Social Media & Email Marketing</li>
+						<li>SEO</li>
+						<li>Content managment</li>
+						<li>Google Analytics</li>
+					</ul>
+
+				</div>
+		</td>
+	</tr>
+	</table>
 </div>
+{% include '_about.html' %}
+{% include '_volunteer.html' %}
+<!-- {% include '_about.html' %}
+{% include '_about.html' %} -->
 {% endblock %}
