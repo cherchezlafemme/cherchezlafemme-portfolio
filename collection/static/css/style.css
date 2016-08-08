@@ -151,34 +151,47 @@ a:hover {
     position: relative;
 }
 
-table {
-    width:100%;
-    background-color: #E8DFDA;
-    border-bottom: 2px solid #cbe2ef;
-    border-spacing: 0;
-    line-height: 0;
-    border-collapse: collapse;
-}
-
 #profile-pic {
-    size: 50%;
-    height: auto;
-    width: 100%;
+    width: 100%; 
 }
 
-td {
-    border-spacing: 0;
-    text-align: top;
-    width: 50%;
-}
 
 #left-side-image-video {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    background-color: #E8DFDA;
+}
+    
+#right-side-hello {
+    display: table-cell;
+    width: 50%;
+    background-color: #E8DFDA;
+    font-weight: bold;
 }
 
-#right-side-hello {
-    background-color: #E8DFDA;
-    padding: 20px;
+#right-skills {
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
+
+#left-skills {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+#summary {
+    clear: both;
+}
+
+/* #right-side-hello:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+*/
 
 /*ISSUES WITH THIS PART*/
 /*#right-side-hello-content {
@@ -191,11 +204,17 @@ td {
     word-wrap: break-word; 
     }
 */
-/*.line-p {
-    display: block;
-    white-space: normal;
+.line-p {
+    color: #254e7b;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
 }
-*/
+
+.inside-line-p {
+    padding: 10px;
+    color: #5584b1;
+}
 
 #about {
     padding-bottom: 20px;
