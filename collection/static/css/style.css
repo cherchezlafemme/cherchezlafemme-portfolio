@@ -39,8 +39,12 @@ ul, li, footer {
 	padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /*Main frame style*/
-#container, header, footer { 
+.container, header, footer { 
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,6 +104,7 @@ ul, li, footer {
 a {
 	text-decoration: none;
 }
+
 /* unvisited link */
 a:link {
     color: #5584b1;
@@ -140,6 +145,7 @@ a:hover {
 /*Welcome to the site section*/
 #hello-container {
     display: block;
+    position: relative;
 }
 
 table {
@@ -188,3 +194,11 @@ td {
 }
 */
 
+#links-to-media {
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    text-align: center;
+}
