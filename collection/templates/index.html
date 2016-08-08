@@ -2,51 +2,53 @@
 
 {% block content %}
 <div class='container' id='hello-container'>
-	<table>
-	<tr>
-		<td id='left-side-image-video'>
+		<div id='left-side-image-video'>
 			<img id='profile-pic' src='/static/images/anna-krupp.jpg' alt='anna-krupp-profile-pic'>
-		</td>
-		<td id='right-side-hello'>
+		</div>
+		<div id='right-side-hello'>
 				<div id='right-side-hello-content'>
-					<p class='line-p'>HI, I'M ANYA.</p>
 					<p class='line-p'>JUNIOR DEVELOPER</p>
 
-					<p class='line-p'>Tech Skills:</p>
-					<ul>
-						<li>Ruby on Rails</li><br/>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>Ruby on Rails</li>
-					</ul>
+					<div id="left-skills">
+						<p class='line-p'>Tech Skills:</p>
+						<ul class='inside-line-p'>
+							<li>Ruby on Rails</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>Ruby on Rails</li>
+						</ul>
 
-					<p>Looking forward to learn:</p>
-					<ul>
-						<li>Python</li>
-						<li>Advanced JavaScript</li>
-						<li>New gems & libraries</li>
-					</ul>
+						<p class='line-p'>Looking forward to learn:</p>
+						<ul class='inside-line-p'>
+							<li>Python</li>
+							<li>Advanced JavaScript</li>
+							<li>New gems & libraries</li>
+						</ul>
+					</div>
 
-					<p>Other languages</p>
+					<div id="right-skills">
+						<p class='line-p'>Other languages</p>
+						<ul class='inside-line-p'>
+							<li>Russian: native</li>
+							<li>Italian: profetional</li>
+						</ul>
 
-					<li>Russian: native</li>
-					<li>Italian: profetional</li>
-
-					<p>Overflow</p>
-					<ul>
-						<li>Sales</li>
-						<li>Consumer behaviour/li>
-						<li>Communication</li>
-						<li>Leadership</li>
-						<li>Social Media & Email Marketing</li>
-						<li>SEO</li>
-						<li>Content managment</li>
-						<li>Google Analytics</li>
-					</ul>
+						<p class='line-p'>Overflow</p>
+						<ul class='inside-line-p'>
+							<li>Communication</li>
+							<li>Leadership</li>
+							<li>Google Analytics</li>
+							<li>Sales</li>
+							<li>Consumer behaviour</li>
+							<li>Social Media & Email Marketing</li>
+							<li>SEO</li>
+							<li>Content managment</li>
+						</ul>
+					</div>
 
 				</div>
-		</td>
+		</div>
 	</tr>
 	</table>
 </div>
