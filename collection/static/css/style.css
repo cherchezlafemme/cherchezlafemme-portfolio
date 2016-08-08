@@ -26,6 +26,14 @@ footer {
     font-size: 14px;
 }
 
+p.words {
+    word-wrap: normal;
+} 
+
+p.letters {
+    word-wrap: break-word;
+}
+
 ul, li, footer {
 	margin: 0;
 	padding: 0;
@@ -151,7 +159,7 @@ table {
 
 td {
     border-spacing: 0;
-
+    text-align: top;
     width: 50%;
 }
 
@@ -163,9 +171,20 @@ td {
     padding: 20px;
 }
 
-#right-side-hello-content {
-    color: blue;
+/*ISSUES WITH THIS PART*/
+/*#right-side-hello-content {
+    color: #254e7b;
     opacity: 0.3;
-    font-size: 34px;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    word-wrap: break-word; 
+    }
+*/
+/*.line-p {
+    display: block;
+    white-space: normal;
 }
+*/
 
